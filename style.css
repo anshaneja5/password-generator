@@ -1,0 +1,111 @@
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'League Spartan', sans-serif;
+}
+
+:root {
+
+    --dk-violet: hsl(268, 75%, 9%);
+    --lt-violet: hsl(268, 47%, 21%);
+    --lt-violet2: hsl(281, 89%, 26%);
+    --vb-violet: hsl(285, 91%, 52%);
+    --vb-violet2: hsl(290, 70%, 36%);
+  
+    --vb-yellow: hsl(52, 100%, 62%);
+  
+  
+    --pl-white: hsl(0, 0%, 100%);
+  
+    --vb-cyan: hsl(176, 100%, 44%);
+    --vb-cyan2: hsl(177, 92%, 70%);
+    --dk-text: hsl(198, 20%, 13%);
+}
+
+.container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background:linear-gradient(231deg, rgba(22, 6, 40, 1) 0%, rgba(52, 28, 79, 1) 50%, rgba(88, 7, 125, 1) 100%);
+    width: 100vw;
+    height: 100vh;
+    border: none;
+}
+/* .display{
+    border-color: var(--dk-violet);
+} */
+.copy-msg{
+    top:-1rem;
+    right: 0rem;
+}
+.tooltip{
+    background-color: var(--dk-violet);
+    transform: scale(0.8);
+    position: absolute;
+    border-radius:20%;
+    color: var(--vb-yellow);
+}
+.tooltip2{
+    right: 0;
+}
+.display::placeholder{
+    opacity: 0.75;
+    color: var(--vb-yellow);
+}
+
+.display-container{
+    border-bottom: 0.35rem solid var(--lt-violet2);
+}
+
+
+.generateButton {
+    width: 100%;
+    background-color: var(--vb-violet);
+    text-align: center;
+    border-radius: 0.75rem;
+    border-bottom: 0.35rem solid var(--vb-yellow);
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    color: var(--vb-yellow);
+    font-weight: 600;
+    font-size: 1rem;
+  }
+
+  .check{
+    margin: 0.5rem 0;
+  }
+
+  .slider{
+    appearance: none;   /* taki merko default styles na mile */
+    border-radius: 1.5rem;
+    width: 100%;
+    /* backgr: var(--lt-violet); */
+    cursor: pointer;
+    margin-top: 0.8rem;
+    /* background-image: ; */
+    background: linear-gradient(var(--vb-violet),var(--vb-violet));
+  }
+  
+  .slider::-webkit-slider-thumb{
+    position: relative;
+    appearance: none;
+    height: 1.5rem;
+    width: 1.5rem;
+    border-radius:50%;
+    background-color: var(--vb-yellow);
+    cursor: pointer;
+    margin-top: -3px;
+  }
+
+  .slider:focus{
+    outline: 1px solid var(--vb-yellow);
+  }
+  .slider::-webkit-slider-thumb:hover{
+    background-color: var(--dk-violet);
+    outline: 1px solid var(--vb-yellow);
+    box-shadow: 0px 0px 15px 5px rgba(255, 229, 61, 0.80);
+  }
