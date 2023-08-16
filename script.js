@@ -88,8 +88,8 @@ async function copyContent(){
 
     setTimeout(()=>{
         copyMsg.classList.remove('tooltip');
-        copyImg.classList.add('tooltip2');
         copyMsg.innerHTML="";
+        // copyImg.classList.add('tooltip2');
     },2000);
 }
 function handleCheckBoxManage(){
